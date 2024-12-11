@@ -25,6 +25,9 @@ class BasePage:
         alert = self.browser.switch_to.alert
         alert.accept()
 
+    def go_to_card_page(self):
+        self.browser.find_element(*BasePageLocators.CARD_LINK).click()
+
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
 
@@ -65,3 +68,4 @@ class BasePage:
             return False
 
         return True
+

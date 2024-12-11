@@ -15,3 +15,9 @@ class ProductPageLocators:
 class  BasePageLocators:
     LOGIN_LINK = ("css selector", "#login_link")
     LOGIN_LINK_INVALID = ("css selector", "#login_link_inc")
+    CARD_LINK = ('xpath', '//a[@class="btn btn-default"]')
+
+
+class BasketPageLocators:
+    CARD_EMPTY_FIELD = ('xpath', '//p')
+    PRODUCTS_IN_CARD = ('xpath', '//h2[text()="Товары в корзине"]')
