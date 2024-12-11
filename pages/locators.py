@@ -12,4 +12,6 @@ class ProductPageLocators:
     HEAD_TITLE = ('xpath', '//h1')
     PRICE = ('xpath', '//p[@class="price_color"]')
 
-
+class  BasePageLocators:
+    LOGIN_LINK = ("css selector", "#login_link")
+    LOGIN_LINK_INVALID = ("css selector", "#login_link_inc")
