@@ -4,6 +4,10 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = ('xpath', '//form[@id="login_form"]')
     REGISTER_FORM = ('xpath', '//form[@id="register_form"]')
+    LOGIN_FIELD = ('xpath', '//input[@id="id_registration-email"]')
+    PASSWORD_FIELD = ('xpath', '//input[@id="id_registration-password1"]')
+    PASSWORD_FIELD_2 = ('xpath', '//input[@id="id_registration-password2"]')
+    SUBMIT_BUTTON = ('xpath', '//button[@name="registration_submit"]')
 
 class ProductPageLocators:
     ADD_TO_CARD_BUTTON = ('xpath', '(//button[@type="submit"])[2]')
@@ -16,7 +20,7 @@ class  BasePageLocators:
     LOGIN_LINK = ("css selector", "#login_link")
     LOGIN_LINK_INVALID = ("css selector", "#login_link_inc")
     CARD_LINK = ('xpath', '//a[@class="btn btn-default"]')
-
+    USER_ICON = ("css selector", ".icon-user")
 
 class BasketPageLocators:
     CARD_EMPTY_FIELD = ('xpath', '//p')
